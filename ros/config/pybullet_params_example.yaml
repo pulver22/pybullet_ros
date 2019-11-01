@@ -25,7 +25,7 @@ use_intertia_from_file: False           # default: False
 
 # laser plugin params, default values are based on hokuyo URG-04LX-UG01
 laser:
-    frame_id:           front_laser     # default: laser, laser reference frame
+    frame_id:           /corner1_1     # default: laser, laser reference frame
     angle_min:          -1.5707963      # default: -90 deg, laser field of view (fov) min angle in rad
     angle_max:          1.5707963       # default: 90 deg, overall (with prev param) we have a 180 degree fov
     num_beams:          50              # default: 512 beams for hokuyo laser
@@ -35,7 +35,7 @@ laser:
 
 # rgb camera plugin parameters
 rgbd_camera:
-    frame_id:           box             # default: box, the name of the reference frame of the camera
+    frame_id:           /top0             # default: box, the name of the reference frame of the camera
     resolution:
         width:          640             # default: 640, horizontal image resolution in pixels
         height:         480             # default: 480, vertical image resolution in pixels
